@@ -1,11 +1,9 @@
 <h1>Para rodar esse projeto você precisará:</h1>
 <ul>
     <li>Baixar esse repositírio</li>
-    <code></code>
+    <code>git clone https://github.com/Rafa-py/React-Native---Navega-o-entre-p-ginas.git</code>
     <li>Instalar as dependências do projeto</li>
-    <code></code>
+    <code>npm install</code>
     <li>Rodar o projeto com expo</li>
-    <code></code>
-    <li>Para rodar o projeto no navegador você precisará instalar uma outra dependência do expo</li>
-    <code></code>
+    <code>npm start</code>
 </ul>
