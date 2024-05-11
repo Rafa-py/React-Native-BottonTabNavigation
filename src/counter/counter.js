@@ -1,5 +1,5 @@
 import React from "react"
-import {View, Button, } from 'react-native';
+import {View, Button, TouchableOpacity} from 'react-native';
 
 export default function button({name}) {
   let [counter, setCounter] = React.useState(0);

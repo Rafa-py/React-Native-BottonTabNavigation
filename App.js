@@ -1,16 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Form from "./src/simpleForms/simpleForm";
-import Button from "./src/componentsAndProps/button";
 import Counter from "./src/counter/counter"
 import Timer from "./src/timer/timer"
 
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
+
+const Tab = createBottomTabNavigator();
+
+function MyTabs() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Contator" component={Counter} />
+      <Tab.Screen name="Timer" component={Timer} />
+    </Tab.Navigator>
+  );
+}
+
+
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <Form />
-    </View>
+    <NavigationContainer>
+      <MyTabs />
+    </NavigationContainer>
   );
 }
 
@@ -22,3 +33,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
